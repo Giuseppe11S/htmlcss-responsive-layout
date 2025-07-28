@@ -1,0 +1,185 @@
+/* Reset e box sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(246, 245, 243);
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar e footer */
+.container-nav,
+.container-footer {
+  height: 10vh;
+}
+
+.container-nav{
+  background-color: white;
+}
+
+.container-nav h1{
+  font-family: "Nerko One", cursive;
+  text-align: center;
+  line-height: 70px;
+  color: orange;
+  text-shadow: 5px 5px 5px 9px black;
+}
+
+.container-footer {
+  margin-top: 100px;
+}
+
+
+.cnt-title-main span{
+  font-size: 15px;
+  color: grey;
+}
+
+.cnt-title-main h1{
+  color: rgb(109, 92, 147);
+}
+.container-main {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 510px;
+  align-items: stretch;
+}
+
+.left-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.cnt-bg-left {
+  height: 100%;
+}
+
+.cnt-bg-left img{
+  height: auto;
+  width: 100%;
+}
+
+
+.cnt-bg-bottom h2,
+.cnt-bg-bottom span{
+  color: white;
+  padding-left: 5px;
+}
+
+.cnt-bg-bottom h2{
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.cnt-bg-bottom span{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.cnt-cont-right{
+  display: flex;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.cnt-bg-right {
+  width: 100%;
+  padding-left: 30px;
+  height: 80%;
+  background-color: white;
+}
+
+.cnt-bg-right h3{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+li{
+  list-style: none;
+  padding-top: 20px;
+}
+
+ul li span{
+  font-weight: 600;
+}
+/* RESPONSIVE DESIGN PER TABLET */
+
+ @media screen and (max-width: 1020px){
+
+  /* PRIMA SEZIONE DELLA PAGINA CON RICETTA */
+  .container-nav h1{
+    text-align: start;
+    padding-left: 10px;
+  }
+
+  .container-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-nav{
+    margin-bottom: 50px;
+  }
+
+  .left-column{
+    width: 70%;
+  }
+
+  .cnt-cont-right{
+    width: 70%;
+  }
+
+  .cnt-bg-right {
+    padding-bottom: 40px;
+  }
+  
+  .cnt-bg-right ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .cnt-bg-right h3{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  li{
+    padding-top: 4px;
+  }
+
+  /* FINE PRIMA SEZIONE PAGINA CON RICETTA */
+} 
+
+/* RESPONSIVE SMARTHPHONE */
+/* @media screen and (max-width: 680px){
+
+  .left-column{
+    width: 50%;
+  }
+
+  .cnt-bg-left img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 100%;
+    display: block;
+  }
+
+  .cnt-bg-bottom{
+    height: 30%;
+  }
+  .cnt-bg-right{
+    height: 80%;
+  }
+
+} */
