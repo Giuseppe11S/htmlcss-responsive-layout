@@ -22,7 +22,8 @@ body{
 
 .container-nav h1{
   font-family: "Nerko One", cursive;
-  text-align: center;
+  text-align: start;
+  padding-left: 10px;
   line-height: 70px;
   color: orange;
   text-shadow: 5px 5px 5px 9px black;
@@ -31,7 +32,6 @@ body{
 .container-footer {
   margin-top: 100px;
 }
-
 
 .cnt-title-main span{
   font-size: 15px;
@@ -46,41 +46,18 @@ body{
   display: flex;
   justify-content: center;
   width: 100%;
-  min-height: 510px;
-  align-items: stretch;
 }
 
 .left-column {
   width: 50%;
   display: flex;
   flex-direction: column;
-  height: 80%;
 }
 
-.cnt-bg-left {
-  height: 100%;
-}
-
-.cnt-bg-left img{
-  height: auto;
+.left-column img{
   width: 100%;
-}
-
-
-.cnt-bg-bottom h2,
-.cnt-bg-bottom span{
-  color: white;
-  padding-left: 5px;
-}
-
-.cnt-bg-bottom h2{
-  font-size: 40px;
-  margin-top: 20px;
-}
-
-.cnt-bg-bottom span{
-  font-size: 50px;
-  font-weight: 600;
+  height: auto;
+  display: block;
 }
 
 .cnt-cont-right{
@@ -94,8 +71,14 @@ body{
 .cnt-bg-right {
   width: 100%;
   padding-left: 30px;
-  height: 80%;
+  height: 100%;
   background-color: white;
+  flex-grow: 1;
+}
+
+
+.cnt-social{
+  width: 100%;
 }
 
 .cnt-bg-right h3{
@@ -113,13 +96,19 @@ ul li span{
 }
 
 /* sezione bottoni social media */
+
+.cnt-bg-bottom{
+  background-color: aquamarine;
+}
+
 .cnt-social {
-  margin-top: 40px;
+  width: calc(50% + 20%);
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 0;
 }
 
 /* Varie icone */
@@ -167,7 +156,7 @@ ul li span{
 .btn-bg{
   background-color: white;
   border: none;
-  padding: 5px 30px;
+  padding: 5px 45px;
   border-radius: 10px;
 }
 /* RESPONSIVE DESIGN PER TABLET */
@@ -199,7 +188,7 @@ ul li span{
   }
 
   .cnt-bg-right {
-    padding-bottom: 40px;
+    padding-bottom: 41px;
   }
   
   .cnt-bg-right ul {
@@ -216,8 +205,28 @@ ul li span{
     padding-top: 4px;
   }
 
+  .cnt-social .btn-bg{
+    font-size: 0px;
+  }
+  .btn-bg{
+    padding: 10px 45px;
+    border-radius: 30px;
+  }
+
+  .cnt-social .btn-bg::before {
+    font-size: 20px;
+  }
+
   /* FINE PRIMA SEZIONE PAGINA CON RICETTA */
 } 
+
+
+
+
+
+
+
+
 
 /* RESPONSIVE SMARTHPHONE */
 @media screen and (max-width: 680px){
@@ -239,11 +248,11 @@ ul li span{
     }
   
     .left-column{
-      width: 70%;
+      width: 90%;
     }
   
     .cnt-cont-right{
-      width: 70%;
+      width: 90%;
     }
   
     .cnt-bg-right {
@@ -260,6 +269,27 @@ ul li span{
   
     li{
       padding: 10px 0px;
+    }
+
+    .cnt-social .btn-bg{
+      font-size: 0px;
+      width: calc(90% + 90%);
+    }
+
+    .cnt-social{
+      display: flex;
+      justify-content: center;
+      gap: 90px;
+    }
+
+    .btn-bg{
+      padding-left: 15px;
+      padding-right: 8px;
+      border-radius: 30px;
+    }
+  
+    .cnt-social .btn-bg::before {
+      font-size: 20px;
     }
 
 } 
