@@ -16,6 +16,41 @@ body{
   height: 10vh;
 }
 
+/* footer */
+.container-footer{
+  color: white;
+  background-color: rgb(124, 105, 164);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.cnt-ft-left{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cnt-ft-left span{
+  padding-bottom: 5px;
+}
+
+.cnt-ft-right ul{
+  display: flex;
+}
+
+.cnt-ft-right li{
+  padding-left: 5px;
+  padding-right: 15px;
+  font-size: 12px;
+}
+
+.cnt-ft-right a {
+  color: white;
+
+}
+
+/* navbar */
 .container-nav{
   background-color: white;
 }
@@ -27,10 +62,6 @@ body{
   line-height: 70px;
   color: orange;
   text-shadow: 5px 5px 5px 9px black;
-}
-
-.container-footer {
-  margin-top: 100px;
 }
 
 .cnt-title-main span{
@@ -113,7 +144,7 @@ ul li span{
 
 /* Varie icone */
 .fb-icon::before {
-  content: "\f09a"; /* Facebook */
+  content: "\f09a";
   font-family: "Font Awesome 6 Brands";
   font-weight: normal;
   margin-right: 8px;
@@ -121,7 +152,7 @@ ul li span{
 }
 
 .tw-icon::before {
-  content: "\f099"; /* Twitter */
+  content: "\f099";
   font-family: "Font Awesome 6 Brands";
   font-weight: normal;
   margin-right: 8px;
@@ -129,7 +160,7 @@ ul li span{
 }
 
 .ig-icon::before {
-  content: "\f16d"; /* Instagram */
+  content: "\f16d"; 
   font-family: "Font Awesome 6 Brands";
   font-weight: normal;
   margin-right: 8px;
@@ -137,7 +168,7 @@ ul li span{
 }
 
 .pint-icon::before {
-  content: "\f0d2"; /* Pinterest */
+  content: "\f0d2";
   font-family: "Font Awesome 6 Brands";
   font-weight: normal;
   margin-right: 8px;
@@ -159,6 +190,49 @@ ul li span{
   padding: 5px 45px;
   border-radius: 10px;
 }
+
+.cnt-banner{
+  display: flex;
+  justify-content: center;
+}
+
+.cnt-banner img{
+  width: calc(50% + 20%);
+}
+
+  /* SEZIONE STORIA DEL PIATTO */
+  .cnt-stry-plate{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .cnt-stry-plate h4{
+    width: calc(50% + 20%);
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  #divider{
+    border-bottom: 2px solid orange;
+  }
+ 
+  .container-stry-plate{
+    margin: 0 auto;
+    width: calc(50% + 20%);
+  }
+
+  .container-stry-plate p{
+    line-height: 36px;
+  }
+
+  .container-stry-plate img{
+    width: 30%;
+    float: left;
+    padding-right: 10px;
+  }
+
+
 /* RESPONSIVE DESIGN PER TABLET */
 
  @media screen and (max-width: 1020px){
@@ -180,11 +254,11 @@ ul li span{
   }
 
   .left-column{
-    width: 70%;
+    width: 80%;
   }
 
   .cnt-cont-right{
-    width: 70%;
+    width: 80%;
   }
 
   .cnt-bg-right {
@@ -209,15 +283,39 @@ ul li span{
     font-size: 0px;
   }
   .btn-bg{
-    padding: 10px 45px;
+    padding: 10px 56px;
     border-radius: 30px;
+  }
+
+  .cnt-social{
+    display: flex;
+    justify-content:center;
   }
 
   .cnt-social .btn-bg::before {
     font-size: 20px;
   }
 
+  .cnt-banner img{
+    width: 80%;
+  }
+
+  .cnt-stry-plate h4{
+    width: 80%;
+  }
+
+  .container-stry-plate{
+    width: 80%;
+  }
+
   /* FINE PRIMA SEZIONE PAGINA CON RICETTA */
+
+  /* footer */
+  .cnt-ft-right{
+    line-height: 40px;
+  }
+
+
 } 
 
 
@@ -292,4 +390,53 @@ ul li span{
       font-size: 20px;
     }
 
+    .cnt-banner{
+      display: none;
+    }
+
+    .container-stry-plate{
+      width: 90%;
+    }
+
+    .container-stry-plate img{
+      float: none !important;
+      width: 60%;
+      display: block;
+      margin: 5px auto;
+      
+    }
+
+    .container-footer{
+      flex-direction: column;
+      align-items: center;
+      height: 25vh;
+    }
+
+    .cnt-ft-left{
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    .cnt-ft-right ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .cnt-ft-right li{
+      padding-left: 20px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-bottom: 0px;
+    }
+
+    .cnt-ft-right li:last-child {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .cnt-ft-left span{
+      padding-bottom: 2px;
+      font-size: 12px;
+    }
 } 
